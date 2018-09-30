@@ -2,5 +2,12 @@
 #include "str.h"
 
 int mystrlen( char * s){
-    return 0;
+    int a = 0;
+    while(*s++){a++;}
+    return a;
+}
+
+char * mystrcat( char *dest, char *source ){
+    char *a = "test";
+    return a;
 }
