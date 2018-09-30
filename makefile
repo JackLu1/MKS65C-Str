@@ -1,5 +1,7 @@
 all : cstring.o str.o
 	gcc cstring.o str.o
+
+run : 
 	./a.out
 
 cstring.o : cstring.c

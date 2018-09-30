@@ -7,7 +7,10 @@ int mystrlen( char * s){
     return a;
 }
 
+
 char * mystrcat( char *dest, char *source ){
-    char *a = "test";
-    return a;
+    char * ans = dest;
+    while(*dest){dest++;} //iterate to terminating 0
+    while(*dest++ = *source++);
+    return ans;
 }
