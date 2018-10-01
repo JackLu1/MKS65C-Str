@@ -1,4 +1,4 @@
-all : cstring.o str.o
+compile : cstring.o str.o
 	gcc cstring.o str.o
 
 run : 
