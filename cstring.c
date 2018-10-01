@@ -40,8 +40,22 @@ int main(){
   char source3[] = "cat";
   printf("source: %s\n", source3);
   printf("dest: %s\n", dest3);
-  mystrncpy(dest3, source3, 3);
+  mystrncpy(dest3, source3, 5);
   printf("our result: %s\n", dest3);
+  char dest5[10] = "meow";
+  char source5[] = "cat";
+  strncpy(dest5, source5, 5);
+  printf("ofc result: %s\n", dest5);
+  char dest4[10] = "triste";
+  char source4[] = "happiness";
+  printf("source: %s\n", source4);
+  printf("dest: %s\n", dest4);
+  mystrncpy(dest4, source4, 7);
+  printf("our result: %s\n", dest4);
+  char dest6[10] = "triste";
+  char source6[] = "happiness";
+  strncpy(dest6, source6, 7);
+  printf("ofc result: %s\n", dest6);
     
   printf("\nmystrcmp test\n");
   char cmp0[] = "kilogramme of steel";
@@ -59,9 +73,15 @@ int main(){
   char cmp4[] = "ounce";
   char cmp5[] = "pound";
   printf("cmp4: %s\n", cmp4);
-  printf("cmp3: %s\n", cmp5);
+  printf("cmp5: %s\n", cmp5);
   printf("our result: %d\n", mystrcmp(cmp4, cmp5));
   printf("ofc result: %d\n", strcmp(cmp4, cmp5));
+  char cmp6[] = "fluid";
+  char cmp7[] = "fluid ounces";
+  printf("cmp6: %s\n", cmp6);
+  printf("cmp7: %s\n", cmp7);
+  printf("our result: %d\n", mystrcmp(cmp6, cmp7));
+  printf("ofc result: %d\n", strcmp(cmp6, cmp7));
   
 
   printf("\nmystrchr test\n");

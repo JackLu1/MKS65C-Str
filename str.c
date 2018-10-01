@@ -6,8 +6,6 @@ int mystrlen( char * s){
   while(*s++){a++;}
   return a;
 }
-
-
 char * mystrcat( char *dest, char *source ){
   char * ans = dest;
   while(*dest){dest++;} //iterate to terminating 0
